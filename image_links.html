@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3498db, #e91e63);
+            color: #130b0b;
+        }
+        header, nav, section {
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .gallery img, .menu img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu img {
+            width: 200px;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        .menu span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello!</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="#menu">Menu</a>
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Technology: Future's promise, present's reality, shaping tomorrow.</p>
+        <div class="gallery">
+            <img src="human robot.jpg" alt="Technology">
+            <img src="ai.jpg" alt="Ai">
+            <img src="ai 2.jpg" alt="humans with Ai">
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="waterfall.jpg" alt="waterfall">
+            <img src="nature masai.jpg" alt="livestock">
+            <img src="waterfall1.jpg" alt="river with boat">
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu">
+            <img src="breakfast.jpg" alt="breakfast">
+            <span> Breakfast</span>
+            <img src="lunch.jpg" alt="lunch">
+            <span> Lunch</span>
+            <img src="dinner.jpg" alt="dinner">
+            <span> Dinner</span>
+        </div>
+    </section>
+</body>
+</html>
